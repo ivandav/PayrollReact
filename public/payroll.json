@@ -1,0 +1,27 @@
+[
+    {
+      "code": 95,
+      "empName": "Ivan Barrantes",
+      "empSalary": 2908
+    },
+    {
+      "code": 95,
+      "empName": "Victor Ortiz",
+      "empSalary": 2505
+    },
+    {
+      "code": 95,
+      "empName": "Sergio Aza",
+      "empSalary": 100
+    },
+    {
+      "code": 95,
+      "empName": "Diego Suarez",
+      "empSalary": 2000
+    },
+    {
+      "code": 95,
+      "empName": "Jessika Bernal",
+      "empSalary": 4300
+    }
+]

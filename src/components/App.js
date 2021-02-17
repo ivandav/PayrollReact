@@ -13,7 +13,7 @@ class App extends Component{
     this.state = {
       myAppointments: [],
       formDisplay: false,
-      orderBy: 'petName',
+      orderBy: 'empName',
       orderDir: 'asc',
       queryText: '',
       lastIndex: 0
@@ -62,7 +62,7 @@ class App extends Component{
   }
 
   componentDidMount() {
-    fetch('./data.json')
+    fetch('./payroll.json')
     .then(response => response.json())
     .then(result => {
       const appointments = result.map(item => {
@@ -95,13 +95,7 @@ render () {
       }
   }).filter(eachItem => {
     return(
-      eachItem['petName']
-        .toLowerCase()
-        .includes(this.state.queryText.toLowerCase()) ||
-      eachItem['ownerName']
-        .toLowerCase()
-        .includes(this.state.queryText.toLowerCase()) ||
-      eachItem['aptNotes']
+      eachItem['empName']
         .toLowerCase()
         .includes(this.state.queryText.toLowerCase())
     );

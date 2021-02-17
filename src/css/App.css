@@ -33,6 +33,7 @@
 
 .appointment-list .apt-date {
   font-style: italic;
+  font-size: 1.8em;
 }
 
 .appointment-list .apt-notes {

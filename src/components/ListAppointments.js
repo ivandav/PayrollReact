@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { FaTimes } from 'react-icons/fa'
+import { FaCanadianMapleLeaf } from 'react-icons/fa'
 import Moment from 'react-moment'
 
 class ListAppointments extends Component {
     render() {
         const listItems = this.props.appointments.map(item => (
-            <div>{item.petName}</div>
+            <div>{item.empName}</div>
         ));
         return (
             <div className="appointment-list item-list mb-3">
@@ -15,27 +15,31 @@ class ListAppointments extends Component {
                   <button className="pet-delete btn btn-sm btn-danger"
                     onClick={()=>this.props.deleteAppointment(item)}
                   >
-                      <FaTimes />
+                      <FaCanadianMapleLeaf />
+                      
                   </button>
                 </div>
     
-                <div className="pet-info media-body">
-                  <div className="pet-head d-flex">
-                    <span className="pet-name">{item.petName}</span>
+                <div className="pet-info media-body d-flex justify-content-around">
+                  <div className="pet-head">
+                    <span className="pet-name">{item.empName}</span>
+                    <div className="owner-name">
+                      <span className="label-item">Agency: </span>
+                      <span>Fiallo Holdings</span>
+                    </div>
+                    <div className="apt-notes">Cannot be picked up by anyone</div>
+                  </div>
+                  <div>
                     <span className="apt-date ml-auto">
-                        <Moment 
+                        {/* <Moment 
                             date={item.aptDate}
                             parse="YYYY-MM-dd hh:mm"
                             format="MMM-D h:mma"
-                        />
+                        /> */
+                        "$" + item.empSalary.toFixed(2)
+                        }
                     </span>
                   </div>
-    
-                  <div className="owner-name">
-                    <span className="label-item">Owner: </span>
-                    <span>{item.ownerName}</span>
-                  </div>
-                  <div className="apt-notes">{item.aptNotes}</div>
                 </div>
               </div>
             ))}
