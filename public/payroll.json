@@ -1,4 +1,4 @@
-[
+{"employees": [
     {
       "code": 95,
       "empName": "Ivan Barrantes",
@@ -24,4 +24,52 @@
       "empName": "Jessika Bernal",
       "empSalary": 4300
     }
+],
+"agencies": [
+  {
+    "agcName": "Ecvz Enterprise",
+    "agcOwner": "Elva Vera",
+    "code": 91
+  },
+  {
+    "agcName": "Temp Works",
+    "agcOwner": "Isis Pineda",
+    "code": 92
+  },
+  {
+    "agcName": "Covenant Group",
+    "agcOwner": "David Ballesteros",
+    "code": 95
+  },
+  {
+    "agcName": "Jose Vanegas",
+    "agcOwner": "Jose Vanegas",
+    "code": 96
+  },
+  {
+    "agcName": "Or Services",
+    "agcOwner": "Alfonso Ovalle",
+    "code": 97
+  },
+  {
+    "agcName": "D&E Demolition",
+    "agcOwner": "Luis Gomez",
+    "code": 98
+  },
+  {
+    "agcName": "Quality Pro",
+    "agcOwner": "Samuel & Aldo",
+    "code": 100
+  },
+  {
+    "agcName": "Trigger Logicstics",
+    "agcOwner": "John Velasco",
+    "code": 115
+  },
+  {
+    "agcName": "Sweet Metropolitan",
+    "agcOwner": "Dulce Vanegas",
+    "code": 124
+  }
 ]
+}

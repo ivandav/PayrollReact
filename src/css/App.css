@@ -5,6 +5,7 @@
 .apt-addheading {
   cursor: pointer;
   user-select: none;
+  font-size: 2em;
 }
 
 .appointment-list {

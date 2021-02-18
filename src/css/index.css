@@ -17,4 +17,5 @@ footer {
 .btn-primary {
   background-color: #c24311 !important;
   border: inherit;
+  margin: 0.5em;
 }

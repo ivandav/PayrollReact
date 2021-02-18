@@ -1,5 +1,6 @@
 import '../css/App.css';
 import AddAppointments from './AddAppointments';
+import AgenciesSelector from './AgenciesSelector';
 import SearchAppointments from './SearchAppointments';
 import ListAppointments from './ListAppointments';
 import { Component } from 'react';
@@ -12,6 +13,7 @@ class App extends Component{
     super();
     this.state = {
       myAppointments: [],
+      myAgencies: [],
       formDisplay: false,
       orderBy: 'empName',
       orderDir: 'asc',
@@ -65,12 +67,14 @@ class App extends Component{
     fetch('./payroll.json')
     .then(response => response.json())
     .then(result => {
-      const appointments = result.map(item => {
+      const appointments = result.employees.map(item => {
         item.aptId = this.state.lastIndex;
         this.setState({lastIndex: this.state.lastIndex + 1 })
         return item;
       })
+      const agencies = result.agencies
       this.setState({
+        myAgencies: agencies,
         myAppointments: appointments
       });
     });
@@ -107,10 +111,15 @@ render () {
       <div className="row">
         <div className="col-md-12 bg-white">
           <div className="container">
-            <AddAppointments 
+            {/* <AddAppointments 
               formDisplay={this.state.formDisplay}
               toggleForm={this.toggleForm}
               addAppointment = {this.addAppointment}
+            /> */}
+            <AgenciesSelector
+              formDisplay={this.state.formDisplay}
+              toggleForm={this.toggleForm}
+              agencies2={this.state.myAgencies}
             />
             <SearchAppointments 
               orderBy = {this.state.orderBy}
