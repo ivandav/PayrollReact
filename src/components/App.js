@@ -99,9 +99,12 @@ render () {
       }
   }).filter(eachItem => {
     return(
+      eachItem['code']
+        .toLowerCase()
+        .includes(this.state.queryText.toLowerCase()) ||
       eachItem['empName']
         .toLowerCase()
-        .includes(this.state.queryText.toLowerCase())
+        .includes(this.state.queryText.toLowerCase()) 
     );
   });
 
@@ -120,6 +123,7 @@ render () {
               formDisplay={this.state.formDisplay}
               toggleForm={this.toggleForm}
               agencies2={this.state.myAgencies}
+              selectAgc={this.searchApts}
             />
             <SearchAppointments 
               orderBy = {this.state.orderBy}

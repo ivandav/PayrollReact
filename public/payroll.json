@@ -1,75 +1,130 @@
 {"employees": [
     {
-      "code": 95,
+      "code": "95",
       "empName": "Ivan Barrantes",
       "empSalary": 2908
     },
     {
-      "code": 95,
+      "code": "95",
       "empName": "Victor Ortiz",
       "empSalary": 2505
     },
     {
-      "code": 95,
+      "code": "95",
       "empName": "Sergio Aza",
       "empSalary": 100
     },
     {
-      "code": 95,
+      "code": "95",
       "empName": "Diego Suarez",
       "empSalary": 2000
     },
     {
-      "code": 95,
+      "code": "95",
       "empName": "Jessika Bernal",
       "empSalary": 4300
+    },
+    {
+      "code": "91",
+      "empName": "Karla Parra",
+      "empSalary": 456
+    },
+    {
+      "code": "91",
+      "empName": "Karen Sanchez",
+      "empSalary": 234
+    },
+    {
+      "code": "91",
+      "empName": "Albarracin Soto",
+      "empSalary": 765
+    },
+    {
+      "code": "91",
+      "empName": "Diego Del Rio",
+      "empSalary": 243
+    },
+    {
+      "code": "91",
+      "empName": "Javier Jimenez",
+      "empSalary": 76
+    },
+    {
+      "code": "91",
+      "empName": "Edgar Marin",
+      "empSalary": 34
+    },
+    {
+      "code": "91",
+      "empName": "Maria Jimenez",
+      "empSalary": 856
+    },
+    {
+      "code": "91",
+      "empName": "Carmen Soto",
+      "empSalary": 2345
+    },
+    {
+      "code": "91",
+      "empName": "Cecilia Vera",
+      "empSalary": 67
+    },
+    {
+      "code": "91",
+      "empName": "Maria Jose",
+      "empSalary": 876
+    },
+    {
+      "code": "91",
+      "empName": "Dmyto Tkachenko",
+      "empSalary": 755
     }
 ],
 "agencies": [
   {
     "agcName": "Ecvz Enterprise",
     "agcOwner": "Elva Vera",
-    "code": 91
+    "code": "91"
   },
   {
     "agcName": "Temp Works",
     "agcOwner": "Isis Pineda",
-    "code": 92
+    "code": "92"
   },
   {
     "agcName": "Covenant Group",
     "agcOwner": "David Ballesteros",
-    "code": 95
+    "code": "95"
   },
   {
     "agcName": "Jose Vanegas",
     "agcOwner": "Jose Vanegas",
-    "code": 96
+    "code": "96"
   },
   {
     "agcName": "Or Services",
     "agcOwner": "Alfonso Ovalle",
-    "code": 97
+    "code": "97"
   },
   {
     "agcName": "D&E Demolition",
     "agcOwner": "Luis Gomez",
-    "code": 98
+    "code": "98"
   },
   {
     "agcName": "Quality Pro",
     "agcOwner": "Samuel & Aldo",
-    "code": 100
+    "code": "100"
   },
   {
     "agcName": "Trigger Logicstics",
     "agcOwner": "John Velasco",
-    "code": 115
+    "code": "115"
   },
   {
     "agcName": "Sweet Metropolitan",
     "agcOwner": "Dulce Vanegas",
-    "code": 124
+    "code": "124"
   }
 ]
 }

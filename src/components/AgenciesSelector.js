@@ -22,7 +22,9 @@ class AgenciesSelector extends Component {
                     </div>
                     <div className="card-body">
                     <form id="aptForm" noValidate>
-                        <AgencyButton agencies={this.props.agencies2}/>
+                        <AgencyButton 
+                            agencies={this.props.agencies2}
+                            selectedAgc={this.props.selectAgc}/>
                     </form>
                     </div>
                 
