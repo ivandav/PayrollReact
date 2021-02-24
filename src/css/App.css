@@ -45,3 +45,11 @@
 .dropdown-item:active {
   background-color: #a9aeb2;
 }
+.home-container {
+  display: flex;
+  background-color: white;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}

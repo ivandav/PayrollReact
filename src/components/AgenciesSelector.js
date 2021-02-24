@@ -6,8 +6,13 @@ class AgenciesSelector extends Component {
     constructor() {
         super();
         this.state = {
-            agenciesList: ['covenant','advantage','ecvx enterprises']
+            agencieName: 'Please Select an Agency'
         };
+        this.updateSelection = this.updateSelection.bind(this);
+    };
+
+    updateSelection(name) {
+        this.setState({agencieName: name})
     }
 
     render () {
@@ -18,13 +23,20 @@ class AgenciesSelector extends Component {
                 <div className="apt-addheading card-header bg-primary text-white"
                     onClick={this.props.toggleForm}>
                         <FaRegCaretSquareDown />
-                        Agencies List
+                        Agencies List{" - " + this.state.agencieName}
                     </div>
                     <div className="card-body">
                     <form id="aptForm" noValidate>
-                        <AgencyButton 
-                            agencies={this.props.agencies2}
-                            selectedAgc={this.props.selectAgc}/>
+                        <div>
+                            {this.props.agencies2.map(item => (
+                            <div className="btn btn-primary"
+                                onClick={e => {
+                                    this.props.selectAgc(item.code);
+                                    this.updateSelection(item.agcName);}}>
+                                { item.code + "\b\t\| " + item.agcName}
+                            </div>
+                            ))}
+                        </div> 
                     </form>
                     </div>
                 

@@ -6,14 +6,7 @@ class AgencyButton extends Component {
     };
     render () {
         return (
-          <div>
-            {this.props.agencies.map(item => (
-              <div className="btn btn-primary"
-              onClick={e => (this.props.selectedAgc(item.code))}>
-              {item.code + "\b\t\| " + item.agcName}
-            </div>
-            ))}
-          </div>     
+              <div>hello</div>
         );
     }
 

@@ -24,8 +24,8 @@ class ListAppointments extends Component {
                   <div className="pet-head">
                     <span className="pet-name">{item.empName}</span>
                     <div className="owner-name">
-                      <span className="label-item">Agency: </span>
-                      <span>Fiallo Holdings</span>
+                      <span className="label-item">Pay Date: </span>
+                      <span>02-26-2021</span>
                     </div>
                     <div className="apt-notes">Cannot be picked up by anyone</div>
                   </div>

@@ -1,7 +1,7 @@
 /**  Basic Page CSS **/
 body {
   font-weight: 200;
-  background-color: #c24311;
+  background-color: #EE6D18;
 }
 
 header a,
@@ -15,23 +15,8 @@ footer {
 
 .bg-primary,
 .btn-primary {
-  background-color: #c24311 !important;
+  background-color: #EE6D18 !important;
   border: inherit;
   margin: 0.5em;
-}
-
-.grid-container {
-  display: grid;
-  width: fit-content;
-  grid-template-columns: 20% 80%;
-  grid-gap: 10px;
-  justify-items: center;
-  align-items: center;
-}
-
-.grid-container2 {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 10px;
 }
 
